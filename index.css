@@ -23,7 +23,7 @@ body{
     border-radius: 10px;
     justify-content: space-around;
     margin-bottom: 1%;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px #fb6f92;
 
 }
 .minor{
@@ -34,7 +34,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 15px;
+    font-size: 1.1rem;
 }
 .template{
     display: flex;
@@ -48,7 +49,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 15px #fb6f92;
     
 }
 .bubble{
@@ -61,4 +62,10 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
+    transition: background-color 0.15s linear, transform 0.15s linear;
+}
+.bubble:hover{
+    background-color: #f52f61;
+    transform: scale(1.1);
+    
 }
