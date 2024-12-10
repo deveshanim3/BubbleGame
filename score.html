@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: #ffb3c6;
+            display: flex;
+            height: 100dvh;
+            align-items: center;
+            justify-content: center;
+        }
+        .main {
+            background-color: rgba(255, 255, 255, 0.342);
+            height: 30dvh;
+            width: 30dvw;
+            border-radius: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s linear;
+        }
+
+        .main:hover {
+            animation: shake 0.2s linear; 
+        }
+
+        @keyframes shake {
+            0%{transform: rotateZ(0deg);}
+            25%{transform: rotateZ(-5deg);}
+            50%{transform: rotateZ(0deg);}
+            75%{transform: rotateZ(5deg);}
+            100%{transform: rotateZ(0deg);}
+        }
+
+        #btn{
+            font-size: 1.3rem;
+            padding: 4%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: #fb6f92;
+            transition: transform 0.2s linear, font-size 0.2s linear, border-radius 0.2s linear;
+        }
+        #btn:hover{
+            transform: skew(1.1);
+            font-size: 1.33rem;
+            border-radius: 10px 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    </style>
 </head>
 <body>
-    <button><a href="index.html">Home Page</a></button>
+    <div class="main"><button id="btn"><a href="index.html">Home Page</a></button></div>
 </body>
 </html>
