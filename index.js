@@ -1,5 +1,5 @@
 var score=0;
-var timer=60;
+var timer=30;
 var newHit;
 function makeBubble(){
     var clutter=``;
@@ -37,6 +37,10 @@ function decreaseScore(){
     document.querySelector('#score').textContent=score;
 }
 
+clock()
+getNewHit()
+makeBubble()
+
 document.querySelector('#btm').addEventListener('click',(detail)=>{
     var clickedNum=Number(detail.target.textContent);
     console.log(clickedNum);
@@ -52,7 +56,3 @@ document.querySelector('#btm').addEventListener('click',(detail)=>{
     }  
 })
 
-
-clock()
-getNewHit()
-makeBubble()
