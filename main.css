@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100dvh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#ffc2d1af; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc2d1af;
+    height: 100dvh;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    background-color: #ffb3c6;
+    width: 80%;
+    height: 15%;
+    margin-top: 0.7%;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    box-shadow: 0 0 5px #fb6f92;
+
+}
+.minor{
+    background-color: #fb6f92;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+.template{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    background-color: #ffb3c6;
+    width: 80%;
+    height: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px #fb6f92;
+    
+}
+.bubble{
+    height: 40px;
+    width: 40px;
+    background-color: #fb6f92;
+    border-radius: 50%;
+    margin: 2% 0 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: background-color 0.15s linear, transform 0.15s linear;
+}
+.bubble:hover{
+    background-color: #f52f61;
+    transform: scale(1.1);
+    
+}
+
